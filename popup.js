@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     } catch (error) {
       console.error("Network error:", error)
-      const errorMessage = "Network error: Could not connect to server"
+      const errorMessage = "Network error: Could not connect to server or you haven't logged in"
       showMessage(errorMessage, "error")
 
       // Send error message to content script
