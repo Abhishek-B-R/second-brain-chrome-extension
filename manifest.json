@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "MindWell - Knowledge Hub",
+  "description": "Save websites to your MindWell knowledge hub with smart organization",
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "host_permissions": ["http://localhost:3000/*", "*://*/*"],
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save to MindWell"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/logo.png",
+    "32": "icons/logo.png",
+    "48": "icons/logo.png",
+    "128": "icons/logo.png"
+  }
+}
