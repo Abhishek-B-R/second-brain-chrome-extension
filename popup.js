@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     messageDiv.innerHTML = ""
 
     try {
-      const response = await fetch("http://localhost:3000/api/websites", {
+      const response = await fetch("https://mindwell.abhi.wtf/api/websites", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
