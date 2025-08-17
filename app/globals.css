@@ -1588,8 +1588,8 @@ body {
 .\[\&_\[cmdk-group-heading\]\]\:text-muted-foreground [cmdk-group-heading] {
   color: hsl(var(--muted-foreground));
 }
-\
-.\[\&_\[cmdk-group\]\:not$$\[hidden\]$$_\~\[cmdk-group\]\]\:pt-0 [cmdk-group]:not([hidden]) ~[cmdk-group] {
+
+.\[\&_\[cmdk-group\]\:not\(\[hidden\]\)_\~\[cmdk-group\]\]\:pt-0 [cmdk-group]:not([hidden]) ~[cmdk-group] {
   padding-top: 0px;
 }
 

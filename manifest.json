@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "name": "MindWell - Knowledge Hub",
   "description": "Save websites to your MindWell knowledge hub with smart organization",
-  "permissions": ["activeTab", "scripting", "tabs", "storage"],
-  "host_permissions": ["https://mindwell.abhi.wtf/*", "*://*/*"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage",
+    "management"
+  ],
+  "host_permissions": [
+    "https://mindwell.abhi.wtf/*",
+    "*://*/*"
+  ],
   "background": {
-    "service_worker": "background/service_worker.js"
+    "service_worker": "background/service_worker.js",
+    "type": "module"
   },
   "action": {
     "default_popup": "popup.html",
